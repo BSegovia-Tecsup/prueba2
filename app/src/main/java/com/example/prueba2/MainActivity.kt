@@ -4,9 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+<<<<<<< HEAD
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
+=======
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+>>>>>>> Upgrading1
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -31,28 +37,45 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+class Greeting(name: String, modifier: Modifier) {
+
+}
+
 @Composable
 fun ViewHolaCurso() {
     Column(
         modifier = Modifier
             .fillMaxSize()
+<<<<<<< HEAD
             .padding(16.dp)
             .background(Color(0xFFE3F2FD)), // Fondo azul claro
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center // Centrar verticalmente
+=======
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+>>>>>>> Upgrading1
     ) {
         Text(
             text = "Welcome to the Course!",
             fontSize = 28.sp,
+<<<<<<< HEAD
             fontWeight = FontWeight.Bold,
             color = Color(0xFF1976D2) // Color azul
+=======
+            fontWeight = FontWeight.Bold
+>>>>>>> Upgrading1
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = "Hello, Student!",
+<<<<<<< HEAD
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium,
             color = Color(0xFF424242) // Color gris oscuro
+=======
+            fontSize = 20.sp
+>>>>>>> Upgrading1
         )
     }
 }
@@ -60,5 +83,9 @@ fun ViewHolaCurso() {
 @Preview(showBackground = true)
 @Composable
 fun PreviewViewHolaCurso() {
+<<<<<<< HEAD
     ViewHolaCurso() // Asegúrate de que esta función está definida
+=======
+    ViewHolaCurso()
+>>>>>>> Upgrading1
 }
